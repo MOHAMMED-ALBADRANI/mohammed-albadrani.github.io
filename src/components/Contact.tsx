@@ -52,6 +52,22 @@ export default function Contact() {
                 aria-label="Visit Mohammed Albadrani's LinkedIn profile"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm border border-[hsl(var(--border))] bg-[hsl(var(--surface))] text-[hsl(var(--primary-text))] hover:border-[hsl(var(--accent)/0.4)] hover:bg-[hsl(var(--surface-elevated))] transition-all w-full sm:w-auto justify-center"
               >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-linkedin"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
                 LinkedIn
               </a>
             </div>

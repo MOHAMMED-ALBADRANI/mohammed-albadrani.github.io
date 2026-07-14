@@ -15,6 +15,11 @@ export default function AnimatedNetworkBackground() {
   const nodesRef = useRef<Node[]>([]);
   const animationRef = useRef<number>(0);
   const { resolvedTheme } = useTheme();
+  const themeRef = useRef(resolvedTheme);
+
+  useEffect(() => {
+    themeRef.current = resolvedTheme;
+  }, [resolvedTheme]);
 
   const prefersReducedMotion =
     typeof window !== "undefined" &&
@@ -62,7 +67,7 @@ export default function AnimatedNetworkBackground() {
 
     if (prefersReducedMotion) {
       // Draw static frame
-      const isDark = resolvedTheme === "dark";
+      const isDark = themeRef.current === "dark";
       const nodeColor = isDark
         ? "rgba(56, 189, 248, 0.2)"
         : "rgba(100, 116, 139, 0.2)";
@@ -102,7 +107,7 @@ export default function AnimatedNetworkBackground() {
     const animate = () => {
       if (!ctx || !canvas) return;
 
-      const isDark = resolvedTheme === "dark";
+      const isDark = themeRef.current === "dark";
       const nodeColor = isDark
         ? "rgba(56, 189, 248, 0.25)"
         : "rgba(100, 116, 139, 0.25)";
@@ -162,7 +167,7 @@ export default function AnimatedNetworkBackground() {
       window.removeEventListener("resize", resize);
       cancelAnimationFrame(animationRef.current);
     };
-  }, [resolvedTheme, prefersReducedMotion, initNodes, connectionDistance]);
+  }, [prefersReducedMotion, initNodes, connectionDistance]);
 
   return (
     <canvas
