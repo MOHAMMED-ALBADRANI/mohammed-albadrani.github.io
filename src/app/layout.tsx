@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Emergency and Security Operations Manager with 10+ years in government operations, emergency communications, and physical security systems.",
     type: "website",
     locale: "en_US",
-    images: [{ url: "/mohammed-albadrani-portfolio/images/portrait.jpg", alt: "Mohammed Albadrani" }],
+    images: [{ url: "/images/portrait.jpg", alt: "Mohammed Albadrani" }],
   },
 };
 
