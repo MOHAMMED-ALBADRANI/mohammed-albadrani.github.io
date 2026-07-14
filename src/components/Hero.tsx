@@ -118,7 +118,7 @@ export default function Hero() {
               {/* Portrait ring */}
               <div className="portrait-ring rounded-full overflow-hidden w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative">
                 <Image
-                  src="/images/portrait.jpg"
+                  src="/mohammed-albadrani-portfolio/images/portrait.jpg"
                   alt={`Professional portrait of ${personal.fullName}`}
                   fill
                   className="object-cover object-top"
