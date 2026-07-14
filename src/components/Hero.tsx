@@ -79,12 +79,22 @@ export default function Hero() {
               className="mt-8 flex flex-wrap gap-4"
             >
               <a
-                href="/documents/Mohammed_Albadrani_CV.pdf"
-                download
+                href="https://drive.google.com/drive/u/1/folders/1LCbwPEAP9DpCkbV3fokhQ4knGpLZ1_hB"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm bg-[hsl(var(--accent))] text-white hover:bg-[hsl(var(--accent-hover))] transition-all hover:shadow-lg hover:shadow-[hsl(var(--accent)/0.2)]"
               >
                 <Download size={16} />
-                Download CV
+                View CV
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mohammed-albadrani-38a906a3?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Mohammed Albadrani's LinkedIn profile"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm border border-[hsl(var(--border))] bg-[hsl(var(--surface))] text-[hsl(var(--primary-text))] hover:border-[hsl(var(--accent)/0.4)] hover:bg-[hsl(var(--surface-elevated))] transition-all"
+              >
+                LinkedIn
               </a>
               <a
                 href="#contact"
@@ -116,7 +126,7 @@ export default function Hero() {
               {/* Portrait ring */}
               <div className="portrait-ring rounded-full overflow-hidden w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative">
                 <Image
-                  src="/images/portrait.jpg"
+                  src="/mohammed-albadrani-portfolio/images/portrait.jpg"
                   alt={`Professional portrait of ${personal.fullName}`}
                   fill
                   className="object-cover object-top"
